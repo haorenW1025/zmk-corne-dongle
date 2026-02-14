@@ -58,13 +58,13 @@
         combo_tab {
             timeout-ms = <COMBO_TERM>;
             key-position = <31 32>;
-            bindings = <&kp TAB>
+            bindings = <&kp TAB>;
         };
 
         combo_esc {
             timeout-ms = <COMBO_TERM>;
             key-position = <37 38>;
-            bindings = <&kp ESC>
+            bindings = <&kp ESC>;
         };
     };
 
