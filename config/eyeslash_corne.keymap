@@ -57,13 +57,13 @@
         compatible = "zmk,combos";
         combo_tab {
             timeout-ms = <COMBO_TERM>;
-            key-position = <31 32>;
+            key-positions = <31 32>;
             bindings = <&kp TAB>;
         };
 
         combo_esc {
             timeout-ms = <COMBO_TERM>;
-            key-position = <37 38>;
+            key-positions = <37 38>;
             bindings = <&kp ESC>;
         };
     };
