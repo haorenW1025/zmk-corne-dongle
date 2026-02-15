@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: SYMBOL}
-  - NUMBER
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -90,7 +90,7 @@ layers:
   - _
   - <
   - '>'
-  - {t: END, type: held alternate}
+  - {t: '?', type: held alternate}
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -145,7 +145,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - '&studio_unlock'
