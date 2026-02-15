@@ -15,19 +15,19 @@ layers:
   - {t: ;, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
-  - A
-  - R
-  - S
-  - T
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: LGUI}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - D
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - H
-  - N
-  - E
-  - I
-  - O
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: RGUI}
+  - {t: I, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -196,3 +196,8 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [31, 32]
+  k: $$mdi:keyboard-tab$$
+- p: [37, 38]
+  k: $$mdi:keyboard-esc$$
