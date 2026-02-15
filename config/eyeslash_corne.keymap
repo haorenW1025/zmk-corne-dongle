@@ -134,6 +134,82 @@
                 , <&macro_release &kp LCTRL>
                 , <&macro_tap     &kp K>;
         };
+        tmux_x: tmux_x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms  = <30>;
+            bindings
+                = <&macro_press   &kp LCTRL>
+                , <&macro_tap     &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap     &kp K>;
+        };
+        tmux_z: tmux_z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms  = <30>;
+            bindings
+                = <&macro_press   &kp LCTRL>
+                , <&macro_tap     &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap     &kp Z>;
+        };
+        tmux_c: tmux_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms  = <30>;
+            bindings
+                = <&macro_press   &kp LCTRL>
+                , <&macro_tap     &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap     &kp C>;
+        };
+        tmux_v: tmux_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms  = <30>;
+            bindings
+                = <&macro_press   &kp LCTRL>
+                , <&macro_tap     &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap     &kp MINUS>;
+        };
+        tmux_n: tmux_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms  = <30>;
+            bindings
+                = <&macro_press   &kp LCTRL>
+                , <&macro_tap     &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap     &kp N>;
+        };
+        tmux_p: tmux_p {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms  = <30>;
+            bindings
+                = <&macro_press   &kp LCTRL>
+                , <&macro_tap     &kp B>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap     &kp P>;
+        };
+        tmux_b: tmux_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms  = <30>;
+            bindings
+                = <&macro_press   &kp LCTRL>
+                , <&macro_tap     &kp B>
+                , <&macro_release &kp LCTRL>;
+        };
     };
 
     combos {
@@ -190,9 +266,9 @@
         layer_3 {
             display-name = "MACRO";
             bindings = <
-&trans  &trans      &trans      &trans      &trans     &trans                                  &mmv MOVE_UP                     &tmux_j      &tmux_l    &trans       &trans      &trans           &trans
-&trans  &trans      &trans      &trans      &trans     &trans                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &tmux_h      &trans     &trans       &trans      &trans           &trans
-&trans  &trans      &trans      &trans      &trans     &trans    &kp C_MUTE                    &mmv MOVE_DOWN                   &tmux_k      &trans     &trans       &trans       &trans           &trans
+&trans  &trans      &trans      &trans      &tmux_p     &trans                                  &mmv MOVE_UP                     &tmux_j      &tmux_l    &trans       &trans      &trans           &trans
+&trans  &trans      &trans      &trans      &trans      &trans                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &tmux_h      &tmux_n    &trans       &trans      &trans           &trans
+&trans  &tmux_z     &tmux_x     &tmux_c     &tmux_v     &tmux_b     &trans                      &mmv MOVE_DOWN                   &tmux_k      &trans     &trans       &trans      &trans           &trans
                                 &trans      &trans      &trans                                                                   &trans       &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
