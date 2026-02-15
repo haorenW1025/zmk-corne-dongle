@@ -67,14 +67,13 @@
     };
 
     mt: mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <TAP_TERM>;
-            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE>;
-            bindings = <&kp>, <&kp>;
-            display-name = "Mod-Tap";
-        };
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <TAP_TERM>;
+        require-prior-idle-ms = <REQUIRE_PRIOR_IDLE>;
+        bindings = <&kp>, <&kp>;
+        display-name = "Mod-Tap";
     };
 
     combos {
