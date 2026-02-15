@@ -88,7 +88,7 @@
     };
 
     macros {
-        tmux_h : tmux_h {
+        tmux_h: tmux_h {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
@@ -99,7 +99,7 @@
                 , <&macro_release &kp LCTRL>
                 , <&macro_tap     &kp H>;
         };
-        tmux_l : tmux_l {
+        tmux_l: tmux_l {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
@@ -110,7 +110,7 @@
                 , <&macro_release &kp LCTRL>
                 , <&macro_tap     &kp L>;
         };
-        tmux_j : tmux_j {
+        tmux_j: tmux_j {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
@@ -121,7 +121,7 @@
                 , <&macro_release &kp LCTRL>
                 , <&macro_tap     &kp J>;
         };
-        tmux_k : tmux_k {
+        tmux_k: tmux_k {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
