@@ -12,6 +12,18 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define COMBO_TERM 50
+#define TAP_TERM 180
+#define REQUIRE_PRIOR_IDLE 150
+
+#define ALT_A &mt LALT A
+#define CTRL_R &mt LCTRL R
+#define GUI_S &mt LGUI S
+#define SHFT_T &mt LSHFT T
+
+#define ALT_O &mt RALT O
+#define CTRL_I &mt RCTRL I
+#define GUI_E &mt RGUI E
+#define SHFT_N &mt RSHFT N
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -53,6 +65,15 @@
         tap-ms = <100>;
     };
 
+    mt: mod_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MOD_TAP";
+        flavor = "balanced";
+        tapping-term-ms = <TAP_TERM>;
+        require-prior-idle-ms = <REQUIRE_PRIOR_IDLE>;
+        #quick-tap-ms
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_tab {
@@ -75,7 +96,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp G                              &kp UP                &kp J        &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-&td0       &kp A  &kp R      &kp S     &kp T  &kp D                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp N  &kp E      &kp I    &kp O     &kp SQT
+&td0       ALT_A  CTRL_R     GUI_S     SHFT_T &kp D                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        SHFT_N GUI_E      CTRL_I   ALT_O     &kp SQT
 &kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp SPACE              &kp DOWN              &kp K        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                              &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT
             >;
