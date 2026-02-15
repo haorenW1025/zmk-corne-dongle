@@ -51,6 +51,16 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        mt: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <TAP_TERM>;
+            require-prior-idle-ms = <REQUIRE_PRIOR_IDLE>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -64,16 +74,6 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         tap-ms = <100>;
-    };
-
-    mt: mod_tap {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-        flavor = "balanced";
-        tapping-term-ms = <TAP_TERM>;
-        require-prior-idle-ms = <REQUIRE_PRIOR_IDLE>;
-        bindings = <&kp>, <&kp>;
-        display-name = "Mod-Tap";
     };
 
     combos {
