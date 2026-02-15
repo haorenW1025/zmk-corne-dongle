@@ -268,7 +268,7 @@
             bindings = <
 &trans  &trans      &trans      &trans      &tmux_p     &trans                                  &mmv MOVE_UP                     &tmux_j      &tmux_l    &trans       &trans      &trans           &trans
 &trans  &trans      &trans      &trans      &trans      &trans                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &tmux_h      &tmux_n    &trans       &trans      &trans           &trans
-&trans  &trans      &trans      &trans      &trans      &trans     &trans                      &mmv MOVE_DOWN                   &tmux_k      &trans     &trans       &trans      &trans           &trans
+&trans  &tmux_z     &tmux_x     &tmux_c     &tmux_v     &tmux_b     &trans                      &mmv MOVE_DOWN                   &tmux_k      &trans     &trans       &trans      &trans           &trans
                                 &trans      &trans      &trans                                                                   &trans       &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
