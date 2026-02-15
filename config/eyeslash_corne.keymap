@@ -34,7 +34,7 @@
 #define LT1_FSLH &lt 1 FSLH
 
 #define VOLUP &kp C_VOL_UP
-#define VOLDN &kp C_VOL_DOWN
+#define VOLDN &kp C_VOL_DN
 #define VOLMUTE &kp C_MUTE
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
