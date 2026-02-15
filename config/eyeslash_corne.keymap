@@ -84,10 +84,10 @@
             bindings = <&kp TAB>;
         };
 
-        combo_esc {
+        combo_enter {
             timeout-ms = <COMBO_TERM>;
             key-positions = <37 38>;
-            bindings = <&kp ESC>;
+            bindings = <&kp ENTER>;
         };
     };
 
