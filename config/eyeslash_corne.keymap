@@ -65,13 +65,12 @@
         tap-ms = <100>;
     };
 
-    mt: mod_tap {
+    mt: mt {
         compatible = "zmk,behavior-hold-tap";
         label = "MOD_TAP";
         flavor = "balanced";
         tapping-term-ms = <TAP_TERM>;
         require-prior-idle-ms = <REQUIRE_PRIOR_IDLE>;
-        #quick-tap-ms
     };
 
     combos {
