@@ -29,7 +29,7 @@
 #define SHFT_ESC &mt RSHFT ESC
 
 #define LT1_Z &lt 1 Z
-#define LT2_X &lt 1 X
+#define LT2_X &lt 2 X
 #define LT2_DOT &lt 2 DOT 
 #define LT1_FSLH &lt 1 FSLH
 
