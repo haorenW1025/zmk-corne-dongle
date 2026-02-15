@@ -15,6 +15,7 @@
 #define TAP_TERM 180
 #define REQUIRE_PRIOR_IDLE 150
 
+
 #define ALT_A &mt LALT A
 #define CTRL_R &mt LCTRL R
 #define GUI_S &mt LGUI S
