@@ -32,6 +32,8 @@
 #define LT2_X &lt 2 X
 #define LT2_DOT &lt 2 DOT 
 #define LT1_FSLH &lt 1 FSLH
+#define LT3_Q &lt 3 Q
+#define LT3_SEMI &lt 3 SEMI
 
 #define VOLUP &kp C_VOL_UP
 #define VOLDN &kp C_VOL_DN
@@ -155,7 +157,7 @@
         default_layer {
             display-name = "COLEMAK";
             bindings = <
-&kp DEL    &kp Q  &kp W      &kp F     &kp P    &kp G                              &kp UP                &kp J        &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp DEL    LT3_Q  &kp W      &kp F     &kp P    &kp G                              &kp UP                &kp J        &kp L  &kp U      &kp Y    LT3_SEMI  &kp BSPC
 &td0       ALT_A  CTRL_R     GUI_S     SHFT_T   &kp D                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        SHFT_N GUI_E      CTRL_I   ALT_O     &kp SQT
 &kp LSHFT  LT1_Z  LT2_X      &kp C     &kp V    &kp B       &kp SPACE              &kp DOWN              &kp K        &kp M  &kp COMMA  LT2_DOT  LT1_FSLH  &kp ESC
                              &kp LGUI  SHFT_ESC &lt 1 SPACE                                              &lt 1 BSPC   &kp LSHFT  &kp RALT
@@ -186,11 +188,11 @@
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "MACRO";
             bindings = <
-&studio_unlock   &kp F1      &kp F2      &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans  &sys_reset  &trans      &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+&trans  &trans      &trans      &trans      &trans     &trans                                  &mmv MOVE_UP                     &tmux_j      &tmux_l    &trans       &trans      &trans           &trans
+&trans  &trans      &trans      &trans      &trans     &trans                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &tmux_h      &trans     &trans       &trans      &trans           &trans
+&trans  &trans      &trans      &trans      &trans     &trans    &kp C_MUTE                    &mmv MOVE_DOWN                   &tmux_k      &trans     &trans       &tans       &trans           &trans
                                 &trans      &trans      &trans                                                                   &trans       &trans     &trans
             >;
             sensor-bindings = <&scroll_encoder>;
