@@ -200,4 +200,4 @@ combos:
 - p: [31, 32]
   k: $$mdi:keyboard-tab$$
 - p: [37, 38]
-  k: $$mdi:keyboard-esc$$
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
